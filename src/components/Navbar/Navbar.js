@@ -4,17 +4,16 @@ import { Link, withRouter } from "react-router-dom";
 
 const Navbar = (props) => {
     return(
-        <div className="navbar">
-            <nav>
-                <ul>
-                    <il><Link href="/">The traveler</Link></il>
-                </ul>
+        <nav className="nav">
+            <ul>
+            <li><Link to="/">The traveler</Link></li>
 
-                <ul>
-                    <il><Link href="/create">New post</Link></il>
-                </ul>
-            </nav>
-        </div>
+            </ul>
+            <ul>
+            <li><Link to="/create">New post</Link></li>
+
+            </ul>
+        </nav>
     )
 }
 

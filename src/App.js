@@ -11,7 +11,7 @@ function App() {
     <Provider store={Store}>
       <div className="App">
         <Navbar />
-        
+        <Router />       
         
       </div>
     </Provider> 
