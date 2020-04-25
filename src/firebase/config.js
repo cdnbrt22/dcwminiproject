@@ -35,6 +35,13 @@ class Firebase {
         return user;
     }
 
+    async logout(){
+        const logout = await firebase.auth().signOut().catch(err => {
+            console.log(err);
+        });
+        return logout;
+    }
+
 }
 
 
